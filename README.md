@@ -23,7 +23,7 @@ Desktop toolkit for configuring, testing, and monitoring Modbus TCP/RTU devices.
 
 ```bash
 git clone https://github.com/inowio/modbus-toolbox.git
-cd inowio-modbus-toolbox
+cd modbus-toolbox
 npm install
 npm run tauri dev
 ```
@@ -54,7 +54,7 @@ Configuration tips:
 ## Project Structure
 
 ```
-inowio-modbus-toolbox/
+cd modbus-toolbox/
 ├── src/            # React + TypeScript UI
 ├── src-tauri/      # Rust backend, Tauri config, icons
 ├── public/         # Static assets & screenshots
