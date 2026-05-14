@@ -1,0 +1,1 @@
+export const CTRL_S = "\nCTRL+S  / CMD+S";

@@ -1,0 +1,34 @@
+[package]
+name = "inowio-modbus-toolbox"
+version = "0.1.0"
+description = "A Tauri App"
+authors = ["you"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "inowio_modbus_toolbox_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.31", features = ["bundled"] }
+serialport = "4"
+
+tokio = { version = "1", features = ["rt", "rt-multi-thread", "net", "time", "sync"] }
+tokio-modbus = { version = "0.17", default-features = false, features = ["tcp", "rtu"] }
+tokio-serial = "5"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+base64 = "0.22"
+zip = "2"
