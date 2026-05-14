@@ -91,12 +91,12 @@ export default function AboutPage() {
             <p>
               <span className="font-semibold text-slate-900 dark:text-slate-100">Source:</span>
               <a
-                href="https://github.com/inowio-tech/modbus-toolbox"
+                href="https://github.com/inowio/modbus-toolbox"
                 className="ml-2 inline-flex items-center gap-1 text-emerald-800 transition hover:text-sky-700 dark:text-emerald-400 dark:hover:text-emerald-300"
                 target="_blank"
                 rel="noreferrer"
               >
-                https://github.com/inowio-tech/modbus-toolbox
+                https://github.com/inowio/modbus-toolbox
               </a>
             </p>
             </div>

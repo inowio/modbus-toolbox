@@ -5,7 +5,7 @@ Thanks for helping us improve the toolbox! This guide keeps contribution steps s
 ## Quick Start
 
 ```bash
-git clone https://github.com/inowio-tech/modbus-toolbox.git
+git clone https://github.com/inowio/modbus-toolbox.git
 cd inowio-modbus-toolbox
 npm install
 npm run tauri dev
