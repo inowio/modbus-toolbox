@@ -78,8 +78,8 @@ Released under the [MIT License](LICENSE).
 
 ## Support & Contact
 
-- Issues: <https://github.com/inowio/inowio-modbus-toolbox/issues>
-- Discussions: <https://github.com/inowio/inowio-modbus-toolbox/discussions>
+- Issues: <https://github.com/inowio/modbus-toolbox/issues>
+- Discussions: <https://github.com/inowio/modbus-toolbox/discussions>
 - Email: <support@inowio.in>
 
 ---
