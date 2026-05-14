@@ -22,7 +22,7 @@ Desktop toolkit for configuring, testing, and monitoring Modbus TCP/RTU devices.
 ### Quick Start
 
 ```bash
-git clone https://github.com/inowio-tech/inowio-modbus-toolbox.git
+git clone https://github.com/inowio-tech/modbus-toolbox.git
 cd inowio-modbus-toolbox
 npm install
 npm run tauri dev
@@ -48,8 +48,8 @@ npm run fmt         # Format Rust sources
 Configuration tips:
 
 - Dev server defaults: `VITE_DEV_SERVER_HOST=127.0.0.1`, `VITE_DEV_SERVER_PORT=1422`
-- Bundled identifier: `TAURI_BUNDLE_IDENTIFIER=Inowio.ModbusToolbox`
-- App data lives under the OS config directory (e.g., `%APPDATA%/Inowio/Modbus-Toolbox/` on Windows)
+- Bundled identifier: `TAURI_BUNDLE_IDENTIFIER=in.inowio.modbus.toolbox`
+- App data lives under the OS config directory (e.g., `%APPDATA%/in.inowio.modbus.toolbox/` on Windows)
 
 ## Project Structure
 
@@ -78,11 +78,12 @@ Released under the [MIT License](LICENSE).
 
 ## Support & Contact
 
-- Docs: [`docs/`](docs/)
 - Issues: <https://github.com/inowio-tech/inowio-modbus-toolbox/issues>
 - Discussions: <https://github.com/inowio-tech/inowio-modbus-toolbox/discussions>
 - Email: <support@inowio.in>
 
 ---
 
-**Inowio Technologies LLP** – Industrial automation and Modbus expertise. [https://inowio.in](https://inowio.in)
+**Inowio Technologies LLP** 
+– From Bits to Machines. 
+[https://inowio.in](https://inowio.in)
