@@ -1,0 +1,106 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --breakpoint-fhd: 1800px;
+  --breakpoint-2k: 2300px;
+  --breakpoint-4k: 3500px;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@layer utilities {
+  /* Local Roboto variable font for branding (public/fonts/Roboto-VariableFont.ttf) */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    /* full supported range of the variable font */
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/fonts/Roboto-VariableFont.ttf') format('truetype-variations');
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  .dark {
+    color-scheme: dark;
+  }
+
+  select {
+    color-scheme: light;
+  }
+
+  .dark select {
+    color-scheme: dark;
+  }
+
+  .dark optgroup {
+    background-color: rgb(15 23 42) !important;
+    color: rgb(226 232 240) !important;
+    font-weight: 600;
+  }
+
+  .dark optgroup option {
+    background-color: rgb(2 6 23) !important;
+    color: rgb(226 232 240) !important;
+    font-weight: 400;
+  }
+
+  .dark option {
+    background-color: rgb(2 6 23);
+    color: rgb(226 232 240);
+  }
+
+  body {
+    @apply m-0 min-h-screen bg-slate-50 font-sans text-slate-900 antialiased;
+  }
+
+  .dark body {
+    @apply bg-slate-950 text-slate-100;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+
+  .brand-name {
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+}
+
+.react-resizable-handle {
+  opacity: 0.9;
+  z-index: 50;
+}
+
+.react-resizable-handle::after {
+  content: "";
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid rgba(148, 163, 184, 0.9);
+  border-bottom: 2px solid rgba(148, 163, 184, 0.9);
+}
