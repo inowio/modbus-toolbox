@@ -22,7 +22,7 @@ Desktop toolkit for configuring, testing, and monitoring Modbus TCP/RTU devices.
 ### Quick Start
 
 ```bash
-git clone https://github.com/inowio-tech/modbus-toolbox.git
+git clone https://github.com/inowio/modbus-toolbox.git
 cd inowio-modbus-toolbox
 npm install
 npm run tauri dev
@@ -78,8 +78,8 @@ Released under the [MIT License](LICENSE).
 
 ## Support & Contact
 
-- Issues: <https://github.com/inowio-tech/inowio-modbus-toolbox/issues>
-- Discussions: <https://github.com/inowio-tech/inowio-modbus-toolbox/discussions>
+- Issues: <https://github.com/inowio/inowio-modbus-toolbox/issues>
+- Discussions: <https://github.com/inowio/inowio-modbus-toolbox/discussions>
 - Email: <support@inowio.in>
 
 ---
